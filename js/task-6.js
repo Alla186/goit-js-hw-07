@@ -33,9 +33,9 @@ function createBoxes(amount) {
     boxes.push(box);
   }
   boxesContainer.append(...boxes);
+
 }
 
 function destroyBoxes() {
   boxesContainer.innerHTML = '';
 }
-

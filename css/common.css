@@ -29,3 +29,12 @@ li {
 list-style: none;
   margin: 10px;
 }
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#boxes div {
+  margin: 5px;
+}
