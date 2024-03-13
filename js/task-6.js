@@ -17,6 +17,7 @@ createBtn.addEventListener('click', () => {
   } else {
     alert('Please enter a number between 1 and 100.');
   }
+
 });
 
 destroyBtn.addEventListener('click', () => {
@@ -24,6 +25,7 @@ destroyBtn.addEventListener('click', () => {
 });
 
 function createBoxes(amount) {
+   boxesContainer.innerHTML = ''; 
   const boxes = [];
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
@@ -33,7 +35,7 @@ function createBoxes(amount) {
     boxes.push(box);
   }
   boxesContainer.append(...boxes);
-
+ 
 }
 
 function destroyBoxes() {
